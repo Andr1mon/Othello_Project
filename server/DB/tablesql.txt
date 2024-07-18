@@ -1,0 +1,55 @@
+
+
+CREATE TABLE JOUEUR (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    country VARCHAR(255),
+    profile_image VARCHAR(255) -- Chemin vers l'image de profil, si stockée localement ou URL
+);
+
+
+
+CREATE TABLE SESSION (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    joueur_id INT NOT NULL,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    expiration_date DATETIME NOT NULL,
+    FOREIGN KEY (joueur_id) REFERENCES JOUEUR(id)
+);
+
+
+
+CREATE TABLE GAME (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    joueur_id INT NOT NULL,
+    game_state JSON NOT NULL, -- L'état du jeu au format JSON
+    start_time DATETIME NOT NULL,
+    end_time DATETIME,
+    FOREIGN KEY (joueur_id) REFERENCES JOUEUR(id)
+);
+
+
+
+CREATE TABLE DLMODEL (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    model_name VARCHAR(255) NOT NULL,
+    description TEXT,
+    model_file_path VARCHAR(255) NOT NULL, -- Chemin vers le fichier du modèle
+    upload_date DATETIME NOT NULL
+);
+
+
+
+CREATE TABLE MOVE (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    game_id INT NOT NULL,
+    player_id INT NOT NULL,
+    row INT NOT NULL,
+    col INT NOT NULL,
+    move_time DATETIME NOT NULL,
+    FOREIGN KEY (game_id) REFERENCES GAME(id),
+    FOREIGN KEY (player_id) REFERENCES JOUEUR(id)
+);
+

@@ -1,0 +1,34 @@
+<div padding class="signup">
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <div class="input-container">
+      <label for="username">Username</label>
+      <input type="text" id="username" [(ngModel)]="username">
+    </div>
+    <div class="input-container">
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="email">
+    </div>
+    <div class="input-container">
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="password">
+    </div>
+    <div class="input-container">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword">
+    </div>
+    <div class="input-container">
+      <label for="country">Pays</label>
+      <select id="country" [(ngModel)]="country">
+        <option value="">Sélectionnez votre pays</option>
+        <option *ngFor="let country of countries" [value]="country.code">{{ country.name }}</option>
+      </select>
+    </div>
+    <div class="centered-button-container">
+      <button class="signup-button" (click)="signUp()">Sign Up</button>
+    </div>
+    <div class="login-option">
+      <p>Already have an account? <a href="../login/">Log in</a></p>
+    </div>
+  </div>
+</div>

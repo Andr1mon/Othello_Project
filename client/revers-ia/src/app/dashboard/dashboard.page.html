@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <div class="dashboard">
+    <ion-img src="../../assets/logo/ReversAI.svg" style="min-width:241px; min-height:48px" alt="ReversAI"></ion-img>
+    <br>
+    <ion-img (click)="goToOfflinePage()" src="../../assets/buttons/Play Offline Button.svg" style="min-width:241px; min-height:48px" alt="Play Online Button"></ion-img>
+    <ion-img (click)="GoToChoosePlayerDisc()" src="../../assets/buttons/Play vs AI Button.svg" style="min-width:241px; min-height:48px" alt="Play Online Button"></ion-img>
+    <ion-img (click)="goToChooseAIDifficultyVSAIFirst()" src="../../assets/buttons/AI vs AI.svg" style="min-width:241px; min-height:48px" alt="Play Online Button"></ion-img>
+    <ion-img (click)="goToHowToPlay()" src="../../assets/buttons/How to play Button.svg" style="min-width:241px; min-height:48px" alt="Play Online Button"></ion-img>
+    <!--<ion-button shape="round" class="div-6 black-button">Play Online</ion-button> 
+    <ion-button (click)="goToOfflinePage()" shape="round" class="div-7 black-button">Play Offline</ion-button>
+    <ion-button (click)="GoToChoosePlayerDisc()" shape="round" class="div-8 black-button">Play vs AI</ion-button>
+    <ion-button (click)="goToChooseAIDifficultyVSAIFirst()" shape="round" class="div-9 black-button">AI vs AI</ion-button>
+    <ion-button (click)="goToHowToPlay()" shape="round" color="primary">How to play</ion-button> -->
+    <br>
+    <div class="rate-share-settings">
+      <ion-img img src="../../assets/buttons/Rate button.svg"  (click)="openGoogleForms()"></ion-img>
+      <ion-img img src="../../assets/buttons/Profile.svg" class="space" (click)="openProfile()"></ion-img>
+      <ion-img src="../../assets/buttons/Settings button.svg" class="space"></ion-img>
+      
+
+    </div>  
+  </div>    
+</ion-content>
+

@@ -1,0 +1,19 @@
+<div padding class="signup">
+  <div class="form-container">
+    <h2>Login</h2>
+    <div class="input-container">
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="email">
+    </div>
+    <div class="input-container">
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="password">
+    </div>
+    <div class="centered-button-container">
+      <button class="signup-button" (click)="login()">Login</button>
+    </div>
+    <div class="login-option">
+      <p>Don't have an account? <a href="../signup/">Sign Up</a></p>
+    </div>
+  </div>
+</div>

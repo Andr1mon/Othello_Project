@@ -1,0 +1,119 @@
+.signup {
+  background-color: #208D3F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .form-container {
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #333333;
+    }
+
+    .input-container {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #666666;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #dbdbdb;
+        font-size: 16px;
+        color: #ffffff;
+
+        &:focus {
+          outline: none;
+          border-color: #3E7F30;
+        }
+      }
+    }
+
+    .centered-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+
+      button.signup-button {
+        background-color: #3E7F30;
+        color: #ffffff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #2F5D1D;
+        }
+      }
+    }
+
+    .login-option {
+      text-align: center;
+      margin-top: 10px;
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #666666;
+
+        a {
+          color: #3E7F30;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+    }
+
+    .input-container {
+      label {
+        font-size: 12px;
+      }
+
+      input,
+      select {
+        font-size: 14px;
+      }
+    }
+
+    .centered-button-container {
+      button.signup-button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

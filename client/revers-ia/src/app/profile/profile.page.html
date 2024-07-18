@@ -1,0 +1,18 @@
+<div class="profile">
+    <div class="profile-container">
+      <div class="profile-image">
+        <img [src]="userImage">
+        <button class="change-photo-button" expand="block" (click)="changeProfileImage()">Change Photo</button>
+      </div>
+      <div class="profile-details" *ngIf="userInfo">
+        <h2>Welcome, {{ userInfo.username }}</h2>
+        <p>E-mail: {{ userInfo.email }}</p>
+        <p>Country: {{ userInfo.country }}</p>
+      </div>
+      <div class="buttons">
+        <button class="logout-button" expand="block" (click)="logout()">Logout</button>
+        <button class="Home-button" expand="block" (click)="goHome()">Home</button>
+      </div>
+    </div>
+  </div>
+  

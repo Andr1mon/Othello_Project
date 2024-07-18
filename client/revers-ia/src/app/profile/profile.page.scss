@@ -1,0 +1,104 @@
+.profile {
+  background-color: #208D3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .profile-container {
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+    .profile-image {
+      position: relative;
+      margin-bottom: 20px;
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto; // Centrer l'image horizontalement
+        display: block; // Assurer qu'elle occupe toute la largeur disponible
+      }
+
+      .change-photo-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+        background-color: #3E7F30;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 8px 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2F5D1D;
+        }
+      }
+    }
+
+    .profile-details {
+      margin-bottom: 20px;
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #333333;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #666666;
+      }
+    }
+
+    .logout-button {
+      background-color: #000000;
+      min-width: 150px;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      padding: 12px 24px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2F5D1D;
+      }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column; // Affiche les boutons en colonne
+      align-items: center;
+      margin-top: 20px; // Ajoute un espace entre les boutons et les autres éléments
+    }
+    .Home-button {
+      margin-top: 10px;
+      background-color: #000000;
+      min-width: 150px;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      padding: 12px 24px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2F5D1D;
+      }
+    }
+  }
+}

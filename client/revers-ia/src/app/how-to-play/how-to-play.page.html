@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true">
+  <div class="dashboard">
+    <ion-img src="../../assets/How to play.svg" style="min-width:241px; min-height:48px" alt="ReversAI"></ion-img>
+    <div class="text-container">
+      <div class="scroll-box">
+        <p>In the game of Reversi, two players engage in a strategic battle using a set of 64 identical game pieces, each with one side light and the other dark. After selecting their preferred color, players take turns tactically positioning their disks on unoccupied squares, ensuring their chosen color is face-up...
+
+        Following a move, any disks of the opposing color within a contiguous line formed by the newly placed disk and another of the player’s color are flipped. As the game progresses and every available square is occupied, victory is awarded to the player who has the majority of disks showing their color.
+        What’s the difference between Reversi and Othello?
+        
+        Reversi first emerged in the 19th century in England. The name reflects the game’s central concept of reversing the opponent’s pieces. During the Victorian board game boom, Reversi gained popularity and continued to be enjoyed until the outbreak of World War I, after which it gradually faded into obscurity.
+        
+        In the second half of the 20th century, a revitalized version of the game emerged in Japan under the name Othello. This marked the beginning of a remarkable resurgence in the game’s popularity, initially within Japan. In more recent times, it has captured the attention of computer and mobile phone programmers, facilitating its global spread and appeal.
+        How to play Reversi game
+        
+        Reversi is easy to learn but challenging to master. In this step-by-step guide, we’ll take you through the rules and gameplay of Reversi, so you can start enjoying this captivating board game. Let’s get started!
+        Setting up the game
+        
+        Reversi is played on an 8×8 grid, where each player takes turns placing their discs on the board. Each player takes half of the 64 identical game pieces. Make sure each has 32. Players decide which color to use throughout the game.
+        Starting positions
+        
+        The standard starting position has four initial discs in the center of the board, forming a square. Two light-side-up and two dark-side-up discs are placed in such a way that same-colored discs are on a diagonal.
+        First move
+        
+        The player with dark discs makes the first move. They must place a dark disc (dark-side-up) on the board in such a way that there is at least one straight line (horizontal, vertical, or diagonal) of their color between the new piece and an anchoring dark piece. The new piece must flip one or more contiguous light pieces.
+        Alternating turns
+        
+        After dark’s move, it’s light’s turn. Light follows the same rules, placing a light disc on the board to flip dark pieces. Players continue to alternate turns, flipping opponent’s discs with each valid move.
+        Capturing discs
+        
+        A valid move involves at least one piece being reversed (flipped over). You must flip at least one opponent’s disc during your turn. Multiple chains of discs may be captured in a single move.
+        Game progression
+        
+        The game continues with players making strategic moves to capture as many discs as possible. The game can end in one of three ways: when all 64 squares on the board are filled, when neither player can legally place a disc in the remaining squares, or when one player has no pieces left on the board in their color.
+        Determining the winner
+        
+        The player with the most discs showing their color on the board at the end of the game wins. In case of a tie, where both players have the same number of discs in their color, the game ends in a draw.
+        How to win Reversi
+        
+        Reversi, a game of strategy and wits, offers a playing field where every move counts. To become a Reversi master, you must learn the art of controlling the board and thinking several moves ahead. In this guide, we’ll explore essential strategies to help you dominate your opponents and seize victory.
+        Capture the corners
+        
+        Placing your pieces in the corner squares is a must-do move. It’s a fundamental part of a winning Reversi strategy. Corner control allows you to flank your opponent’s pieces with ease. You gain access to an entire diagonal, column, or both, making it difficult for your opponent to capture the corner piece.
+        
+        Corners are the most powerful squares on the board. Often, if you secure the corners, you’re on your way to winning the game. The more corners you control, the higher your chances of success. Equally important is preventing your opponent from taking the corners. Avoid letting your piece fall in any of the three squares surrounding the corner, as this allows your opponent to claim the adjacent corner.
+        Control the edges
+        
+        The edges are the next critical squares to monitor. Dominating the edges can lead to significant advantages. Keep your edges balanced and avoid overextending your pieces along them. Losing both corners gives your opponent an opportunity to flip your edge pieces, resulting in a substantial loss.
+        
+        A strategic move in Reversi is to give your opponent one corner so you can secure the other, effectively preventing them from flanking your edge pieces. This tactic requires skill but can be a game-changer. Always maintain a vigilant eye on the edge squares and their potential for control.
+        Play Carefully
+        
+        While it may be tempting to capture as many pieces as possible at the game’s start, this approach can backfire. Instead, adopt a more cautious strategy at the beginning. Focus on flipping only a few pieces with each move.
+        
+        The more pieces you flip early on, the more opportunities you create for your opponent to counterattack and gain an upper hand. In general, having fewer pieces under your control at the game’s outset is a sounder approach, setting you up for a stronger position in the later stages.
+        Stay Centered
+        
+        An integral part of a successful Reversi strategy is striving to stay in the center of the board, surrounded by your opponent’s pieces. Center pieces provide you with a multitude of opportunities for captures as the game progresses. They are easier to flank, resulting in more flips and advantages for you.
+        
+        Maintaining central control is a strategic move that can help you maintain the upper hand throughout the game. By mastering these key strategies, you’ll find yourself with a competitive edge in the world of Reversi. Remember that Reversi is not just about capturing pieces but also about controlling the board and outsmarting your opponent.</p>
+      </div>
+    </div>
+    <ion-img (click)="goHome()" src="../../assets/buttons/Home Button.svg" style="min-width:241px; min-height:48px" alt="Home"></ion-img>
+  </div>
+</ion-content>

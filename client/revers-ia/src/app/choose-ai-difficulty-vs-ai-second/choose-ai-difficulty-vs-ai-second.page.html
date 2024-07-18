@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="dashboard">
+    <ion-img src="../../assets/Choose Second AI Difficulty.svg" style="min-width:241px; min-height:48px" alt="ReversAI"></ion-img>
+    <br><br>
+    <ion-img (click)="goToAIVsAIPage(firstAIDifficulty, 'Easy')" src="../../assets/buttons/Easy Button.svg" style="min-width:241px; min-height:48px" alt="Easy"></ion-img>
+    <ion-img (click)="goToAIVsAIPage(firstAIDifficulty, 'Medium')" src="../../assets/buttons/Medium Button.svg" style="min-width:241px; min-height:48px" alt="Medium"></ion-img>
+    <ion-img (click)="goToAIVsAIPage(firstAIDifficulty, 'Hard')" src="../../assets/buttons/Hard Button.svg" style="min-width:241px; min-height:48px" alt="Hard"></ion-img>
+    <br><br><br><br>
+    <ion-img (click)="goHome()" src="../../assets/buttons/Home Button.svg" style="min-width:241px; min-height:48px" alt="Home"></ion-img>
+
+
+
+    <!-- <ion-img src="../../assets/logo/ReversAI.png" style="min-width:241px; min-height:48px" alt="ReversAI"></ion-img>
+    <br><br>
+    <ion-button (click)="goToAIVsAIPage(firstAIDifficulty, 'Easy')" shape="round" class="div-9 black-button">Easy</ion-button>
+    <ion-button (click)="goToAIVsAIPage(firstAIDifficulty, 'Medium')" shape="round" class="div-10 black-button">Medium</ion-button>
+    <ion-button (click)="goToAIVsAIPage(firstAIDifficulty, 'Hard')" shape="round" class="div-10 black-button">Hard</ion-button>
+    <br><br><br>
+    <ion-button (click)="goHome()" shape="round" class="div-10 black-button">Home</ion-button> -->
+  </div>    
+</ion-content>

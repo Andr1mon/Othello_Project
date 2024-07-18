@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true"> 
+  <div class="container">
+    <div class="player player1" [ngClass]="{ 'active': activePlayer === -1 }">
+      <div class="player-info">
+        <img src="../../assets/joueur1.png" alt="Photo joueur 1" class="player-photo">
+        <div class="score score-black">{{ player1Score }}</div>
+        <div *ngIf="activePlayer === -1" class="player-arrow player1-arrow"></div>
+      </div>
+      <div class="player1">
+        <h3>Player 1</h3>
+      </div>
+    </div>
+    <div class="player player2" [ngClass]="{ 'active': activePlayer === 1 }">
+      <div class="player-info">
+        <div class="score score-white">{{ player2Score }}</div>
+        <img src="../../assets/joueur2.png" alt="Photo joueur 2" class="player-photo">
+        <div *ngIf="activePlayer === 1" class="player-arrow player2-arrow"></div>
+      </div>
+      <div class="player2">
+        <h3>Player 2</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-board">
+    <ion-row *ngFor="let row of cells; let i = index">
+      <ion-col *ngFor="let cell of row; let j = index">
+        <button (click)="makeOneMoveAiVsAI()">
+          <img class="circle" [src]="getImagePath(cell)">
+        </button>
+      </ion-col>  
+    </ion-row>
+    
+    <div class="buttons">
+      <ion-img (click)="makeOneMoveAiVsAI()" src="../../assets/buttons/AI Move Button.svg" alt="IA move"></ion-img>
+      <ion-img (click)="reload()" src="../../assets/buttons/Reload Button.svg" alt="Reload"></ion-img>
+      <ion-img (click)="goHome()" src="../../assets/buttons/Home Button.svg" style="min-width:241px; min-height:48px" alt="Home"></ion-img>
+    </div>
+  </div>
+</ion-content>
+

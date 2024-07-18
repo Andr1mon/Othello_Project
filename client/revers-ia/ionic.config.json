@@ -1,0 +1,7 @@
+{
+  "name": "revers-ia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

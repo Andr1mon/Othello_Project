@@ -1,0 +1,192 @@
+ion-header {
+  .round-profile-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    --border-radius: 50%;
+    --background: #ffffff;
+    --box-shadow:var(--background)
+  }
+  
+  ion-icon {
+    font-size: 40px;
+  }
+
+  ion-back-button { 
+    --color: black !important;
+  }
+}
+
+ion-content {
+  --background: #208D3F; 
+}
+  
+
+.game-board {
+  margin: auto;
+  max-width: 515px; /* Taille maximale en pixels */
+  max-height: 515px; /* Taille maximale en pixels */
+  button 
+  {
+    width: 45px;
+    height: 45px;
+    background: url("../../assets/cell.svg") no-repeat;
+  }
+}
+
+ion-toolbar {
+  background-color: #333; /* Dark background color for the toolbar */
+  color: #252525; /* Light text color for the toolbar */
+}
+
+ion-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+ion-content {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; // espace entre la barre d'en-tête et le plateau de jeu
+
+    ion-row {
+      padding: 0px;
+    }
+    ion-col {
+      padding: 0px;
+    }
+  }
+ 
+} 
+
+.container {
+  display: flex;
+  margin-top: 20px; 
+  text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-inline: 10%;
+
+    .player-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #208D3F;
+      box-shadow: 0 0 5px #19692f;
+      margin-bottom: 5%;
+    }
+    
+    .player1 h3 {
+      display: flex;
+      color: #f0f0f0;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; // espacement interne
+      border-radius: 10px;
+      margin: 0 auto; // Centrer horizontalement
+      width: fit-content;
+      position: absolute;
+    }
+
+    .player2 h3 {
+      display: flex;
+      color: #f0f0f0;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; // espacement interne
+      border-radius: 10px;
+      margin: 0 auto; // Centrer horizontalement
+      width: fit-content;
+      position: absolute;
+      right:10%;
+    }
+
+    .player-info {
+      display: flex;
+      justify-content: center;
+
+      .player-arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid yellow; /* Couleur de la flèche */
+      }
+      
+      .player1-arrow {
+        top: 13.2%; /* Position de la flèche par rapport au joueur 1 */
+        rotate: 270deg;
+        right: 50%;
+      }
+      
+      .player2-arrow {
+        top: 13.2%;  /* Position de la flèche par rapport au joueur 2 */
+        rotate: 90deg;
+        left:50%;
+      }  
+    
+      .score {
+        font-size: larger;
+        color: #f0f0f0;
+        font-weight: bolder;
+        min-width: 35px;
+        width: 35px; /* Largeur fixe en utilisant rem */
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 32px; /* Centrer verticalement */
+        height: 35px;
+        margin-inline: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding:2px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #19692f;
+      }
+      .score-black {
+        color: #f0f0f0;
+        background-color:#000000 ;
+      }
+      .score-white {
+        color: #000000;
+        background-color:#f0f0f0;
+      }
+
+    }
+}
+  
+
+.circle {
+  min-width: 30px; 
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+
+.cell {
+  width: 50px; /* Utilise 8% de la largeur de la vue pour chaque cellule */
+  height: 50px; /* Utilise 8% de la hauteur de la vue pour chaque cellule */
+  max-width: 50px; /* Taille maximale en pixels */
+  max-height: 50px; /* Taille maximale en pixels */
+}
+
+.buttons {
+  margin-top: 20px;
+  ion-img {
+    margin-top: 15px;
+  }
+}
